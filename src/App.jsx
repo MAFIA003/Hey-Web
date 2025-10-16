@@ -88,7 +88,7 @@ useEffect(() => {
             <Route path="/chats/:chatId" element={<Chat />} />
             <Route path="/" element={
                 <div className="welcome-screen">
-                  <img src="/logo.png" alt="Hey Web Logo" />
+                  <img src="logo.png" alt="Hey Web Logo" />
                   <h1>Welcome to Hey Web</h1>
                   <p>Select a chat to start messaging.</p>
                 </div>
