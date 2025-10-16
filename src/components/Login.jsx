@@ -62,7 +62,7 @@ function Login() {
     <div className="login">
       <div className="login__container">
         <img
-          src="/logo.png"
+          src="logo.png"
           alt="Hey Web Logo"
         />
         <div className="login__text">
