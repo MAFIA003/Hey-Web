@@ -1,0 +1,47 @@
+/* src/index.css */
+
+/* 1. DEFINE THE COLOR PALETTE */
+:root {
+   --background-default: #121212; /* Main dark background */
+  --background-app-body: #1E1E1E; /* Slightly lighter dark for panels */
+  --panel-header-background: #2a2a3e; /* Darker panel header */
+  --primary-strong: #EAEAEA; /* Light text for high contrast */
+  --secondary: #888888; /* Dim grey for secondary text */
+  --search-bar-background: #2a2a3e;
+  --conversation-background: #1E1E1E;
+  --active-chat-background: #2c2c41;
+  --message-bubble-sent: #9508f9; /* Accent - Purple */
+  --message-bubble-received: #1c1f25;
+  --icon-color: #b0b3b8;
+}
+
+/* 2. APPLY GLOBAL STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif; /* Apply the new font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}

@@ -1,0 +1,68 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  flex: 0.30;
+  border-right: 1px solid var(--background-default);
+}
+
+.sidebar__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: var(--background-app-body);
+  border-bottom: 1px solid var(--background-default);
+}
+
+.sidebar__headerRight {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.sidebar__headerRight .MuiSvgIcon-root,
+.sidebar__headerRight a {
+  color: var(--icon-color);
+}
+
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  background-color: var(--background-app-body);
+  padding: 8px 12px;
+}
+
+.sidebar__searchContainer {
+  display: flex;
+  align-items: center;
+  background-color: var(--search-bar-background);
+  width: 100%;
+  height: 35px;
+  border-radius: 8px;
+}
+
+.sidebar__searchContainer > .MuiSvgIcon-root {
+  color: var(--icon-color);
+  padding: 0 10px;
+  font-size: 40px;
+}
+
+.sidebar__searchContainer > input {
+  border: none;
+  outline: none;
+  flex: 1;
+  background: transparent;
+  font-size: 15px;
+  color: var(--primary-strong); /* Add this for typed text */
+}
+
+.sidebar__searchContainer > input::placeholder {
+  color: var(--secondary); /* Add this for the placeholder */
+}
+
+.sidebar__chats {
+  flex: 1;
+  background-color: var(--conversation-background);
+  overflow-y: scroll;
+}

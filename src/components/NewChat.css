@@ -1,0 +1,59 @@
+/* src/components/NewChat.css */
+.newChat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.70;
+  background-color: var(--background-app-body); /* Use theme background */
+}
+
+.newChat__header {
+  padding: 20px;
+  border-bottom: 1px solid var(--background-default); /* Use theme border */
+}
+
+.newChat__header > form > input {
+  width: 100%;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--search-bar-background); /* Use theme input background */
+  color: var(--primary-strong); /* Use theme text color */
+  font-size: 15px;
+}
+
+.newChat__header > form > input::placeholder {
+  color: var(--secondary); /* Use theme placeholder color */
+}
+
+.newChat__results {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.newChat__user {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--background-default); /* Use theme border */
+}
+
+.newChat__user:hover {
+  background-color: var(--active-chat-background); /* Use theme hover color */
+}
+
+.newChat__userInfo {
+  margin-left: 15px;
+}
+
+.newChat__userInfo > h3 {
+  font-size: 16px;
+  margin-bottom: 3px;
+  color: var(--primary-strong); /* Use theme text color */
+}
+
+.newChat__userInfo > p {
+  font-size: 14px;
+  color: var(--secondary); /* Use theme secondary text color */
+}

@@ -1,0 +1,49 @@
+/* src/components/SidebarChat.css */
+.sidebarChat {
+  display: flex;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+  text-decoration: none;
+  color: inherit;
+}
+
+.sidebarChat:hover {
+  background-color: #3c0447;
+}
+
+/* Style for the active chat */
+.sidebarChat.active {
+  background-color: var(--active-chat-background);
+}
+
+.sidebarChat__info {
+  margin-left: 15px;
+  flex: 1;
+  overflow: hidden; /* Prevents long names from breaking layout */
+}
+
+.sidebarChat__info > h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: var(--primary-strong); /* Change this color */
+}
+
+.sidebarChat__lastMessage {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: var(--secondary); /* Change this color */
+}
+
+.sidebarChat__lastMessage > p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebarChat__lastMessage > .MuiSvgIcon-root {
+  font-size: 18px !important;
+}

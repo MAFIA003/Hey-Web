@@ -1,0 +1,141 @@
+/* src/components/Chat.css */
+.chat {
+  display: flex;
+  flex-direction: column;
+  flex: 0.70;
+}
+
+/* --- Chat Header CSS --- */
+.chat__header {
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--background-default);
+  background-color: var(--background-app-body);
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+  color: var(--primary-strong);
+}
+
+.chat__headerInfo > p {
+  color: var(--secondary);
+  font-size: 13px;
+}
+
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat__headerRight .MuiSvgIcon-root {
+  color: var(--icon-color);
+}
+
+/* --- Chat Body CSS --- */
+.chat__body {
+  flex: 1;
+  background-color: var(--background-default);
+  background-repeat: repeat;
+  background-position: center;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.chat__message {
+  position: relative;
+  font-size: 15px;
+  padding: 8px 10px;
+  padding-right: 60px;
+  width: fit-content;
+  max-width: 60%;
+  border-radius: 8px;
+  background-color: var(--message-bubble-received);
+  margin-bottom: 20px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  color: white;
+  font-weight: 500;
+}
+
+.chat__receiver {
+  margin-left: auto;
+  background-color: var(--message-bubble-sent);
+}
+
+.chat__timestamp {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+  margin-left: 10px;
+  font-size: 11px;
+  color: #EAEAEA99;
+}
+
+.chat__image {
+  max-width: 250px;
+  border-radius: 8px;
+}
+
+/* --- Chat Footer CSS --- */
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid var(--background-default);
+  padding: 0 15px;
+  background-color: var(--background-app-body);
+}
+
+.chat__footer > .MuiSvgIcon-root, .chat__footer label .MuiSvgIcon-root {
+  padding: 10px;
+  color: white;
+  font-size: 40px !important;
+}
+
+.chat__imagePreview .MuiSvgIcon-root {
+  color: white;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 8px;
+  align-items: center;
+}
+
+.chat__footer > form > input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 15px;
+  color: black; /* Add this for typed text */
+}
+
+.chat__footer > form > input::placeholder {
+  color: var(--secondary); /* Add this for the placeholder */
+}
+
+.chat__footer > form > button {
+  display: none;
+}
+
+.chat__imagePreview > img {
+  height: 40px;
+  width: 40px; 
+  object-fit: cover; 
+  border-radius: 5px;
+  margin: 0 10px;
+} 

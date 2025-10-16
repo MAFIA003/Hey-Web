@@ -1,0 +1,61 @@
+/* src/components/Profile.css */
+.profile {
+  flex: 0.70;
+  display: grid;
+  place-items: center;
+  background-color: var(--background-default);
+}
+
+.profile__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 50px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  width: 100%;
+  max-width: 500px;
+}
+
+.profile__form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.profile__buttons {
+  display: flex;
+  justify-content: space-between; /* Puts space between the buttons */
+  width: 100%;
+  margin-top: 10px;
+}
+
+.profile__avatarContainer {
+  position: relative;
+  cursor: pointer;
+}
+
+.profile__avatarEditButton {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile__uploadSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  padding: 10px;
+  border: 1px dashed lightgray;
+  border-radius: 5px;
+  width: 100%;
+}
