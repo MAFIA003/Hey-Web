@@ -1,5 +1,4 @@
 // src/components/DateSeparator.jsx
-import React from 'react';
 import './DateSeparator.css';
 
 function DateSeparator({ date }) {
