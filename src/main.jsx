@@ -9,7 +9,7 @@ import reducer, { initialState } from './reducer'; // Import the reducer and ini
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/Hey-Web/'>
       <StateProvider initialState={initialState} reducer={reducer}> {/* Add the wrapper here */}
         <App />
       </StateProvider>
