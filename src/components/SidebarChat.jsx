@@ -41,7 +41,7 @@ function SidebarChat({ id, users, lastMessage }) {
           <h2>{otherUser.displayName}</h2>
           <div className="sidebarChat__lastMessage">
             {/* Show camera icon if the last message was an image */}
-            {lastMessage === '📷 Image' && <PhotoCameraIcon />}
+            {lastMessage === 'Image' && <PhotoCameraIcon />}
             <p>{lastMessage}</p>
           </div>
         </div>
